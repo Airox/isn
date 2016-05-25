@@ -1,0 +1,16 @@
+//Suppression articles bdd
+<?php
+
+if (isset($_GET['sup_article']){		
+	$sup_article = $_GET['sup_article'];
+}
+if (isset($_GET['id'])){
+	$id_article = $_GET['id']
+}
+
+if (isset($sup_article, $id_article) AND $sup_article==yes){
+        $req = $bdd -> exec('DELETE FROM articles WHERE id="'.$id_article.'"');
+
+        $validation_form = 'ARTICLE SUPPRIME';
+}
+?>
